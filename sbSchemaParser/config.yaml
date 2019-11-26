@@ -1,0 +1,42 @@
+---
+github_organisation: ga4gh-beacon
+site_domain_name: beacon-project.io
+url: 'https://beacon-project.io'
+#tools_repo: tools
+tags:
+  - code
+  - specification
+categories:
+  - schemas
+  - howto
+schema_repos:
+  beacon-query-types:
+    schema_dirs:
+      - schemas
+    tags:
+      - queries
+    categories:
+      - queries
+out_dirnames:
+  json: generated/json
+  markdown: generated/doc
+  examples: generated/examples
+webdocs:
+  repo: 'ga4gh-beacon.github.io'
+  jekylldir: 'pages/_schemas'
+  schemadir: 'schemas'
+  web_schemas_rel: "/schemas"
+  web_html_rel: "/schemas"
+generator_prefix: '+generated__'
+schema_disclaimer: |
+  <div id="schema-footer">
+  This schema representation is for information purposes. The authorative 
+  version remains with the developing project (see "provenance").
+  </div>
+jekyll_excerpt_separator: "<!--more-->"
+prefix_expansions:
+  orcid: 'https://orcid.org/'
+  PMID: 'https://www.ncbi.nlm.nih.gov/pubmed/'
+links:
+  sb_status_levels: "https://schemablocks.org/about/sb-status-levels.html"
+podmd: 'tools/podMD/podmd.pl'
