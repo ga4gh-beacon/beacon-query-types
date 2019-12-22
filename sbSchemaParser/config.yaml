@@ -2,7 +2,6 @@
 github_organisation: ga4gh-beacon
 site_domain_name: beacon-project.io
 url: 'https://beacon-project.io'
-#tools_repo: tools
 tags:
   - code
   - specification
